@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 全屏对话框 -->
+    <style name="FullScreenDialog">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <!-- 全屏对话框(背景透明) -->
+    <style name="FullScreenDialogTrans" parent="FullScreenDialog">
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <!-- ActionButton start -->
+    <!-- 样式 -->
+    <style name="IosPopupDialogStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <!-- 标题 -->
+    <style name="IosPopuppDialogTitle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/ios_popup_dialog_margin_title</item>
+        <item name="android:layout_marginRight">@dimen/ios_popup_dialog_margin_title</item>
+        <item name="android:layout_marginTop">@dimen/ios_popup_dialog_margin_title</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!-- 底部按钮 -->
+    <style name="IosPopupDialogButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/ios_popup_dialog_height_button</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/ios_popup_dialog_blue</item>
+        <item name="android:textSize">@dimen/ios_popup_dialog_button_text_size</item>
+    </style>
+    <!-- ActionButton end -->
+</resources>

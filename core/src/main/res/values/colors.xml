@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--ActionButton-->
+    <color name="ios_popup_dialog_line">#c6c6c6</color>
+    <color name="ios_popup_dialog_blue">#037BFF</color>
+    <color name="ios_popup_dialog_actionsheet_red">#FD4A2E</color>
+    <color name="ios_popup_dialog_actionsheet_gray">#8F8F8F</color>
+</resources>
