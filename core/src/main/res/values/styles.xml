@@ -16,6 +16,18 @@
         <item name="android:backgroundDimEnabled">false</item>
     </style>
 
+    <!-- 底部弹出对话框动画 -->
+    <style name="BottomDialogAnimation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/anim_dialog_bottom_enter</item>
+        <item name="android:windowExitAnimation">@anim/anim_dialog_bottom_exit</item>
+    </style>
+
+    <!-- MenuPopupWindow -->
+    <style name="MenuPopupWindowAnimationDefault">
+        <item name="android:windowEnterAnimation">@anim/anim_menu_popup_window_default_enter</item>
+        <item name="android:windowExitAnimation">@anim/anim_menu_popup_window_default_exit</item>
+    </style>
+
     <!-- ActionButton start -->
     <!-- 样式 -->
     <style name="IosPopupDialogStyle" parent="@android:style/Theme.Dialog">

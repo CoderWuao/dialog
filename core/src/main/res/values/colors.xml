@@ -5,4 +5,9 @@
     <color name="ios_popup_dialog_blue">#037BFF</color>
     <color name="ios_popup_dialog_actionsheet_red">#FD4A2E</color>
     <color name="ios_popup_dialog_actionsheet_gray">#8F8F8F</color>
+
+    <!--MenuPopupWindow-->
+    <color name="menu_popup_window_def_bg">#00A3FF</color>
+    <color name="menu_popup_window_text">#ffffff</color>
+    <color name="menu_popup_window_background_transparent">#00000000</color>
 </resources>
