@@ -25,8 +25,8 @@ import android.widget.LinearLayout;
 import android.widget.PopupWindow;
 import android.widget.TextView;
 
-import site.wuao.core.R;
 import site.wuao.dialog.ui.utils.DrawableUtil;
+import site.wuao.dialogcore.R;
 
 
 /**
