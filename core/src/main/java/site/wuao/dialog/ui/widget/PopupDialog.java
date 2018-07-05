@@ -16,7 +16,7 @@ import android.view.WindowManager;
 import android.view.WindowManager.LayoutParams;
 import android.widget.TextView;
 
-import site.wuao.dialogcore.R;
+import site.wuao.dialog.R;
 
 
 /**

@@ -4,7 +4,7 @@ import android.content.Context;
 import android.view.Gravity;
 import android.view.WindowManager.LayoutParams;
 
-import site.wuao.dialogcore.R;
+import site.wuao.dialog.R;
 
 
 /**
