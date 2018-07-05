@@ -3,7 +3,8 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/ll_root_view"
-    android:layout_width="@dimen/ios_popup_dialog_width"
+    android:layout_width="wrap_content"
+    android:gravity="center_horizontal"
     android:layout_height="wrap_content"
     android:background="@drawable/ios_popup_dialog_bg"
     android:orientation="vertical">
@@ -11,11 +12,16 @@
     <!-- 标题 -->
     <FrameLayout
         android:id="@+id/fl_top_dialog_action_button"
-        style="@style/IosPopuppDialogTitle">
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/ios_popup_dialog_margin_title"
+        android:layout_marginRight="@dimen/ios_popup_dialog_margin_title"
+        android:layout_marginTop="@dimen/ios_popup_dialog_margin_title"
+        tools:background="#22ff0000">
 
         <TextView
             android:id="@+id/tv_title_dialog_action_button"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:textColor="#000000"
@@ -28,7 +34,12 @@
     <!-- 内容 -->
     <FrameLayout
         android:id="@+id/fl_center_dialog_action_button"
-        style="@style/IosPopuppDialogTitle">
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/ios_popup_dialog_margin_title"
+        android:layout_marginRight="@dimen/ios_popup_dialog_margin_title"
+        android:layout_marginTop="@dimen/ios_popup_dialog_margin_title"
+        tools:background="#22ff0000">
 
         <!-- 控制单行居中, 多行偏左 -->
         <LinearLayout

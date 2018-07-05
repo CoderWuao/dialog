@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
         new CustomActionButton(this)
                 .setTitle("配送完成")
                 .setMessage("请确认您是否已完成订单配送")
+                .setMessage("订单配送订单配送订单配送订单配送订单配送订单配送订单配送订单配送")
                 .setLeftButton("取消", null)
                 .setRightButton("确定", null)
                 .show();
