@@ -1,4 +1,4 @@
-package site.wuao.core.ui.widget;
+package site.wuao.dialog.ui.widget;
 
 import android.content.Context;
 import android.graphics.Rect;

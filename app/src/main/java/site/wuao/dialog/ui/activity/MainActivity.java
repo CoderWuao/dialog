@@ -7,9 +7,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import site.wuao.core.ui.widget.BottomSheet;
-import site.wuao.core.ui.widget.MenuPopupWindow;
-import site.wuao.core.ui.widget.TopSheet;
+import site.wuao.dialog.ui.widget.BottomSheet;
+import site.wuao.dialog.ui.widget.MenuPopupWindow;
+import site.wuao.dialog.ui.widget.TopSheet;
 import site.wuao.dialog.R;
 import site.wuao.dialog.ui.widget.CustomActionButton;
 

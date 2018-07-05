@@ -5,7 +5,6 @@ import android.support.v4.content.ContextCompat;
 import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 
-import site.wuao.core.ui.widget.ActionButton;
 import site.wuao.dialog.R;
 
 /**

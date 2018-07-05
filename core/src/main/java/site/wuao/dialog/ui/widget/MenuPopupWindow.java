@@ -1,4 +1,4 @@
-package site.wuao.core.ui.widget;
+package site.wuao.dialog.ui.widget;
 
 import android.app.Activity;
 import android.content.Context;
@@ -26,7 +26,7 @@ import android.widget.PopupWindow;
 import android.widget.TextView;
 
 import site.wuao.core.R;
-import site.wuao.core.ui.utils.DrawableUtil;
+import site.wuao.dialog.ui.utils.DrawableUtil;
 
 
 /**

@@ -1,4 +1,4 @@
-package site.wuao.core.ui.utils;
+package site.wuao.dialog.ui.utils;
 
 import android.animation.ArgbEvaluator;
 import android.graphics.Color;
