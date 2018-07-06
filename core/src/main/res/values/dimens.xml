@@ -4,7 +4,6 @@
     <dimen name="ios_popup_dialog_width">236dp</dimen>
     <dimen name="ios_popup_dialog_margin_title">15dp</dimen>
     <dimen name="ios_popup_dialog_margin_division">10dp</dimen>
-    <dimen name="ios_popup_dialog_height_button">43dp</dimen>
     <dimen name="ios_popup_dialog_padding_no_button">20dp</dimen>
     <dimen name="ios_popup_dialog_button_text_size">16sp</dimen>
 

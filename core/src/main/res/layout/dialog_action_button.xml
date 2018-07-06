@@ -71,8 +71,9 @@
 
     <!-- 底部两个按钮 -->
     <LinearLayout
+        android:id="@+id/ll_button_dialog_action_button"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="43dp"
         android:divider="@drawable/ios_popup_dialog_divider"
         android:orientation="horizontal"
         android:showDividers="middle">

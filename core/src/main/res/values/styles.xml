@@ -43,7 +43,7 @@
     <!-- 底部按钮 -->
     <style name="IosPopupDialogButton">
         <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">@dimen/ios_popup_dialog_height_button</item>
+        <item name="android:layout_height">match_parent</item>
         <item name="android:layout_weight">1</item>
         <item name="android:gravity">center</item>
         <item name="android:textColor">@color/ios_popup_dialog_blue</item>
