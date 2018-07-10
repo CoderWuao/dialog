@@ -9,6 +9,7 @@ import android.widget.TextView;
 
 import site.wuao.dialog.ui.widget.BottomSheet;
 import site.wuao.dialog.ui.widget.CustomActionButton;
+import site.wuao.dialog.ui.widget.LoadingDialog;
 import site.wuao.dialog.ui.widget.MenuPopupWindow;
 import site.wuao.dialog.ui.widget.TopSheet;
 import site.wuao.dialogsample.R;
@@ -32,8 +33,10 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-        actionButton();
+//        actionButton();
 //        bottomSheet();
+
+        LoadingDialog.getInstance().show(this);
 
 
     }
