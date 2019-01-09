@@ -37,6 +37,8 @@ public class ActionButton extends PopupDialog {
     private TextView mTvMessage;
     /** 水平方向分割线 */
     private View mIvDivisionHor;
+    /** 按钮 */
+    private LinearLayout mLlButton;
     /** 取消按钮 */
     private Button mBtnCancel;
     /** 确认按钮 */
@@ -88,6 +90,7 @@ public class ActionButton extends PopupDialog {
         mVgCenterGroup = (ViewGroup) mRootView.findViewById(R.id.fl_center_dialog_action_button);
         mTvMessage = (TextView) mRootView.findViewById(R.id.tv_message_dialog_action_button);
         mIvDivisionHor = (View) findViewById(R.id.v_division_hor_dialog_action_button);
+        mLlButton = findViewById(R.id.ll_button_dialog_action_button);
         mBtnCancel = (Button) mRootView.findViewById(R.id.btn_left_dialog_action_button);
         mBtnConfirm = (Button) mRootView.findViewById(R.id.btn_right_dialog_action_button);
 
@@ -97,6 +100,7 @@ public class ActionButton extends PopupDialog {
         mVgCenterGroup.setVisibility(View.GONE);
         mTvMessage.setVisibility(View.GONE);
         mIvDivisionHor.setVisibility(View.GONE);
+        mLlButton.setVisibility(View.GONE);
         mBtnCancel.setVisibility(View.GONE);
         mBtnConfirm.setVisibility(View.GONE);
     }
@@ -438,18 +442,10 @@ public class ActionButton extends PopupDialog {
             mTvMessage.setVisibility(View.GONE);
         }
 
-        // 确定和取消按钮都没有设置,不显示按钮,设置底部margin
-        if (!mIsShowCancel && !mIsShowConfirm) {
-            if (mIsShowMessage || mIsShowCenterGroup) {
-                mVgCenterGroup.setPadding(0, 0, 0, mActivity.getResources().getDimensionPixelOffset(R.dimen.ios_popup_dialog_padding_no_button));
-            } else {
-                mVgTopGroup.setPadding(0, 0, 0, mActivity.getResources().getDimensionPixelOffset(R.dimen.ios_popup_dialog_padding_no_button));
-            }
-        }
-
         // 确定和取消按钮都设置了
         if (mIsShowConfirm && mIsShowCancel) {
             mIvDivisionHor.setVisibility(View.VISIBLE);
+            mLlButton.setVisibility(View.VISIBLE);
             mBtnConfirm.setVisibility(View.VISIBLE);
             mBtnConfirm.setBackgroundResource(R.drawable.ios_popup_dialog_right_selector);
             mBtnCancel.setVisibility(View.VISIBLE);
@@ -459,6 +455,7 @@ public class ActionButton extends PopupDialog {
         // 只设置了确定按钮
         if (mIsShowConfirm && !mIsShowCancel) {
             mIvDivisionHor.setVisibility(View.VISIBLE);
+            mLlButton.setVisibility(View.VISIBLE);
             mBtnConfirm.setVisibility(View.VISIBLE);
             mBtnConfirm.setBackgroundResource(R.drawable.ios_popup_dialog_single_selector);
         }
@@ -466,6 +463,7 @@ public class ActionButton extends PopupDialog {
         // 只设置了取消按钮
         if (!mIsShowConfirm && mIsShowCancel) {
             mIvDivisionHor.setVisibility(View.VISIBLE);
+            mLlButton.setVisibility(View.VISIBLE);
             mBtnCancel.setVisibility(View.VISIBLE);
             mBtnCancel.setBackgroundResource(R.drawable.ios_popup_dialog_single_selector);
         }
