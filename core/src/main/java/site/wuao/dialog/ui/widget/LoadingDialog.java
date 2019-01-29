@@ -34,6 +34,10 @@ public class LoadingDialog {
     private LoadingDialog() {
     }
 
+    public PopupDialog getDialog() {
+        return sDialog;
+    }
+
     /**
      * 获取实例
      *
