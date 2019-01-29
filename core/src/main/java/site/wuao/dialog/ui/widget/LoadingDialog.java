@@ -34,10 +34,6 @@ public class LoadingDialog {
     private LoadingDialog() {
     }
 
-    public PopupDialog getDialog() {
-        return sDialog;
-    }
-
     /**
      * 获取实例
      *
@@ -56,6 +52,16 @@ public class LoadingDialog {
         show(activity, null);
     }
 
+    private OnShowListener mOnShowListener;
+
+    public interface OnShowListener {
+        void onShow(PopupDialog dialog);
+    }
+
+    public void setOnShowListener(OnShowListener listener) {
+        mOnShowListener = listener;
+    }
+
     /**
      * 显示
      *
@@ -65,11 +71,9 @@ public class LoadingDialog {
     public void show(Activity activity, Option option) {
         // 参数检查
         if (activity == null) {
-
             return;
         }
         if (sDialog != null && sDialog.isShowing()) {
-
             return;
         }
         if (sDialog == null) {
@@ -94,6 +98,8 @@ public class LoadingDialog {
             } else {
                 msgText.setVisibility(View.GONE);
             }
+
+
         } else {
             // 默认不能按返回取消，若需要按返回取消，则有义务实现取消的逻辑
             sDialog.setCancelable(false);
@@ -102,6 +108,9 @@ public class LoadingDialog {
         }
 
         try {
+            if (mOnShowListener != null) {
+                mOnShowListener.onShow(sDialog);
+            }
             sDialog.show();
         } catch (Exception ignored) {
         }
@@ -132,6 +141,24 @@ public class LoadingDialog {
         private boolean mCancelable = true;
         /** 消息 */
         private String mMsg = "";
+        private int mFlags;
+        private int mMask;
+
+        public int getFlags() {
+            return mFlags;
+        }
+
+        public int getMask() {
+            return mMask;
+        }
+
+        public void setFlags(int flags) {
+            mFlags = flags;
+        }
+
+        public void setMask(int mask) {
+            mMask = mask;
+        }
 
         /**
          * 设置监听
